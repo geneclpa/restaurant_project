@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+/*  CSS styles  */
+/*  Letter type  */
+@font-face{
+    font-family: 'Amiko';
+    src: url(../fonts/Amiko/Amiko-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Amiko';
+    src: url(../fonts/Amiko/Amiko-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Noto Sans';
+    src: url(../fonts/Noto_Sans/NotoSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*  Custom properties  */
+:root{
+    --first_color: #b33939;
+    --first_alpha_color: rgba(179, 57, 57, 0.75);
+    --second_color: #ffb142;
+    --second_alpha_color: rgba(255, 177, 66, .75);
+    --white_color: #ffffff;
+    --light_gray: #f3f3f3;
+    --black_first_color: #000000;
+    --black_second_color: #333333;
+    --black_alpha_color: rgb(0, 0, 0, .50);
+    --link_color: #509EE3;
+    --title_font: 'Amiko', sans-serif;
+    --text_font: 'Noto Sans', sans-serif;
+    --max_width: 1200px;
+    --header_height: 5rem;
+}
+
+/*  Reset css  */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*  General styles  */
+html,
+body{
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--text_font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    color: var(--black_first_color);
+}
+
+a{
+    color: var(--link_color);
+    transition: all 0.5s ease-out;
+}
+
+a:hover{ opacity: .75; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-family: var(--title_font);
+}
+
+h1{ font-size: 2rem; }
+
+h2{ font-size: 1.5rem; }
+
+h3{ font-size: 1.125rem; }
+
+h4{ font-size: 1rem; }
+
+h5{ font-size: .8rem; }
+
+h6{ font-size: .6rem; }
+
+p{ line-height: 1.6; }
+
+/*  Responsive image  */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*  Utilities  */
+.box_shadow{ box-shadow: 0.25rem 0.25rem 1 rem rgba(0, 0, 0, 0.25); }
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max_width);
+}
+
+.none{ display: none; }
+
+.btn{
+    display: inline-block;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+    width: auto;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white_color);
+    background-color: var(--first_color);
+    text-align: center;
+    margin-top: var(--btn_margin_top);
+}
+
+.gray_scale{ filter: grayscale(1); }
+
+.text_left{ text-align: left; }
+
+.text_right{ text-align: right; }
+
+.text_center{ text-align: center; }
+
+.section{ padding: 2rem 1rem; }
+
+.bg_gray_light{ background-color: var(--light_gray); }
+
+/*  Site styles  */
+
+/*  Header  */
+.header{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: var(--header_height);
+    background-color: var(--second_color);
+    padding: 1rem;
+}
+
+.header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/*  Logo  */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > svg{
+    width: 50px;
+    height: 45px;
+}
+
+.logo > a{
+    margin-bottom: 18px;
+    margin-left: -5px;
+    text-decoration: none;
+    color: var(--first_color);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.logo > a:hover{ color: var(--white_color); }
+
+/*  Header buttons  */ 
+.whatsapp_btn{
+    width: 25px;
+    height: 25px;
+    color: var(--first_color);
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.whatsapp_btn:hover{ color: var(--white_color); }
+
+.menu_btn{
+    outline: thin solid var(--first_color);
+    border: 0;
+    background-color: var(--second_color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_btn svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--first_color);
+}
+
+/*  Main menu  */
+.menu{
+    position: fixed;
+    left: 0;
+    bottom: var(--header_height);
+    width: 100%;
+    background-color: var(--second_color);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    border-bottom: thin solid var(--first_color);
+}
+
+.menu.is_active{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.menu a{
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    color: var(--first_color);
+}
+
+.menu a:hover{
+    color: var(--white_color);
+    background-color: var(--first_color);
+}
