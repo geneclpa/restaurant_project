@@ -249,3 +249,33 @@ img{
     color: var(--white_color);
     background-color: var(--first_color);
 }
+
+/*  Hero image  */
+.hero_image{
+    background-image: var(--image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: var(--attachment);
+}
+
+.hero_image_opacity{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--opacity_color);
+}
+
+.hero_image_title{
+    color: var(--white_color);
+    font-size: 1.87rem;
+    margin-bottom: 1rem;
+}
+
+.hero_image_subtitle{
+    color: var(--white_color);
+    font-size: 1.25rem;
+}
