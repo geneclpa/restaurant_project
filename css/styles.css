@@ -35,7 +35,7 @@
     --first_color: #b33939;
     --first_alpha_color: rgba(179, 57, 57, 0.75);
     --second_color: #ffb142;
-    --second_alpha_color: rgba(255, 177, 66, .75);
+    --second_alpha_color: rgba(255, 177, 66, .25);
     --white_color: #ffffff;
     --light_gray: #f3f3f3;
     --black_first_color: #000000;
@@ -145,6 +145,21 @@ img{
 
 .bg_gray_light{ background-color: var(--light_gray); }
 
+.section_title{
+    border-top: thin solid var(--first_color);
+    border-bottom: thin solid var(--first_color);
+    width: 250px;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--black_first_color);
+}
+
+.info_food{
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
 /*  Site styles  */
 
 /*  Header  */
@@ -250,6 +265,7 @@ img{
     background-color: var(--first_color);
 }
 
+/*  Home  */
 /*  Hero image  */
 .hero_image{
     background-image: var(--image);
@@ -278,4 +294,58 @@ img{
 .hero_image_subtitle{
     color: var(--white_color);
     font-size: 1.25rem;
+}
+
+/*  About  */
+.text_about p{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/*  Food  */
+.food a{
+    display: block;
+    text-align: center;
+    color: var(--black_second_color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.food a:hover{
+    color: var(--black_first_color);
+    text-decoration: underline;
+}
+
+.title_food{ margin-bottom: 2rem; }
+
+.card_food{ background-color: var(--second_alpha_color); }
+
+.card_food img{
+    width: 268px;
+    height: 179px;
+    object-fit: cover;
+}
+
+.card_food h3{
+    margin: 1rem;
+    text-align: center;
+    color: var(--first_color);
+}
+
+.card_food p{
+    text-align: center;
+    font-size: 0.87rem;
+    margin-bottom: 2rem;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.card_food small{
+    display: block;
+    text-align: right;
+    color: var(--first_color);
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
 }
