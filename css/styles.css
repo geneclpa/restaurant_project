@@ -453,6 +453,11 @@ img{
     height: 2rem;
 }
 
+.contact_card:last-child h2{
+    font-size: 2rem;
+    color: var(--first_color);
+}
+
 .social_icon{
     width: 100%;
     display: flex;
@@ -462,7 +467,29 @@ img{
 
 .social_icon svg{
     cursor: pointer;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: var(--first_color);
 }
+
+/*  Footer  */
+.footer{
+    background-color: var(--first_color);
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: var(--header_height);
+}
+
+.footer_content a,
+.footer_content small{
+    display: block;
+    padding: 10px 0;
+    font-size: 0.75rem;
+    color: var(--white_color);
+}
+
+.footer_content a{ text-decoration: none; }
+
+.footer_content a:hover{ text-decoration: underline; }
+
+.footer_content a.creator_name{ display: inline; }
