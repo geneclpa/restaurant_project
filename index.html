@@ -41,16 +41,16 @@
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                         <svg class="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
                     </button>
+                    <nav class="menu">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#acerca">Sobre nosotros</a>
+                        <a href="#menu">Carta y Menú</a>
+                        <a href="#reservas">Reservas</a>
+                        <a href="#galeria">Galería</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
                 </div>
             </div>
-            <nav class="menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#acerca">Sobre nosotros</a>
-                <a href="#menu">Carta y Menú</a>
-                <a href="#reservas">Reservas</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
         </section>
     </header>
 
@@ -66,7 +66,7 @@
         </article>
     </section>
 
-    <section id="acerca" class="about section container">
+    <section id="acerca" class="about section container section_xl">
         <article class="title_about section_title">
             <h2>Sobre nosotros</h2>
         </article>
@@ -79,7 +79,7 @@
         </article>
     </section>
 
-    <section id="menu" class="food section">
+    <section id="menu" class="food section container section_xl">
         <article class="title_food section_title">
             <h2>Carta y Menu</h2>
         </article>
@@ -134,104 +134,72 @@
         <a href="#">Ver carta y menú</a>
     </section>
 
-    <section id="reservas" class="reserve section">
+    <section id="reservas" class="reserve section container section_xl">
         <article class="title_reserve section_title">
             <h2>Reservas</h2>
         </article>
         <article class="form_reserve box_shadow">
             <form>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="name_reserve">Nombre <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="text" id="name_reserve" name="name_reserve" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
-                    </div>
+                    <label for="name_reserve">Nombre <sup class="form_required">*</sup></label>
+                    <input type="text" id="name_reserve" name="name_reserve" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="phone_reserve">Teléfono <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="tel" id="phone_reserve" name="phone_reserve" placeholder="Introduzca su teléfono" title="Teléfono solo acepta números" pattern="^[0-9]{6,15}$" required />
-                    </div>
+                    <label for="phone_reserve">Teléfono <sup class="form_required">*</sup></label>
+                    <input type="tel" id="phone_reserve" name="phone_reserve" placeholder="Introduzca su teléfono" title="Teléfono solo acepta números" pattern="^[0-9]{6,15}$" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="email_reserve">Correo electrónico <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="email" id="email_reserve" name="email_reserve" placeholder="Intrduzca su correo electrónico" title="Debe colocar un correo electrónico válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
-                    </div>
+                    <label for="email_reserve">Correo electrónico <sup class="form_required">*</sup></label>
+                    <input type="email" id="email_reserve" name="email_reserve" placeholder="Intrduzca su correo electrónico" title="Debe colocar un correo electrónico válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="date_reserve">Fecha <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="date" id="date_reserve" name="date_reserve" title="Debe colocar una fecha válida" required />
-                    </div>
+                    <label for="date_reserve">Fecha <sup class="form_required">*</sup></label>
+                    <input type="date" id="date_reserve" name="date_reserve" title="Debe colocar una fecha válida" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="hour_reserve">Hora <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <select id="hour_reserve" name="hour_reserve" required>
-                            <option value="">Seleccione una hora</option>
-                            <option value="1">1:00</option>
-                            <option value="2">2:00</option>
-                            <option value="3">3:00</option>
-                            <option value="4">4:00</option>
-                            <option value="5">5:00</option>
-                            <option value="6">6:00</option>
-                            <option value="7">7:00</option>
-                            <option value="8">8:00</option>
-                            <option value="9">9:00</option>
-                            <option value="10">10:00</option>
-                            <option value="11">11:00</option>
-                            <option value="12">12:00</option>
-                            <option value="13">13:00</option>
-                            <option value="14">14:00</option>
-                            <option value="15">15:00</option>
-                            <option value="16">16:00</option>
-                            <option value="17">17:00</option>
-                            <option value="18">18:00</option>
-                            <option value="19">19:00</option>
-                            <option value="20">20:00</option>
-                            <option value="21">21:00</option>
-                            <option value="22">22:00</option>
-                            <option value="23">23:00</option>
-                            <option value="24">24:00</option>
-                        </select>
-                    </div>
+                    <label for="hour_reserve">Hora <sup class="form_required">*</sup></label>
+                    <select id="hour_reserve" name="hour_reserve" required>
+                        <option value="">Seleccione una hora</option>
+                        <option value="1">1:00</option>
+                        <option value="2">2:00</option>
+                        <option value="3">3:00</option>
+                        <option value="4">4:00</option>
+                        <option value="5">5:00</option>
+                        <option value="6">6:00</option>
+                        <option value="7">7:00</option>
+                        <option value="8">8:00</option>
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                        <option value="22">22:00</option>
+                        <option value="23">23:00</option>
+                        <option value="24">24:00</option>
+                    </select>
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="persons_reserve">Personas <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="number" id="persons_reserve" name="persons_reserve" placeholder="Introduzca el número de personas" min="1" title="Personas solo acepta números" required />
-                    </div>
+                    <label for="persons_reserve">Personas <sup class="form_required">*</sup></label>
+                    <input type="number" id="persons_reserve" name="persons_reserve" placeholder="Introduzca el número de personas" min="1" title="Personas solo acepta números" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="restaurant_reserve">Restaurante <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <select id="restaurant_reserve" name="restaurant_reserve" required>
-                            <option value="">Seleccione un restaurante</option>
-                            <option value="smart">Smart Restaurant</option>
-                        </select>
-                    </div>
+                    <label for="restaurant_reserve">Restaurante <sup class="form_required">*</sup></label>
+                    <select id="restaurant_reserve" name="restaurant_reserve" required>
+                        <option value="">Seleccione un restaurante</option>
+                        <option value="smart">Smart Restaurant</option>
+                    </select>
                 </div>
-                <div class="row_form">
-                    <div class="col_30">
-                        <label for="comments_reserve">Comentarios <sup class="form_required">*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <textarea id="comments_reserve" name="comments_reserve" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
-                    </div>
+                <div class="row_form text_area">
+                    <label for="comments_reserve">Comentarios <sup class="form_required">*</sup></label>
+                    <textarea id="comments_reserve" name="comments_reserve" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
                 </div>
                 <p class="text_required">* Campo requerido</p>
                 <input class="btn form_btn" type="submit" value="Reservar" />
@@ -246,7 +214,7 @@
         </article>
     </section>
 
-    <section id="galeria" class="gallery section">
+    <section id="galeria" class="gallery section container section_xl">
         <article class="title_gallery section_title">
             <h2>Galería</h2>
         </article>
@@ -259,54 +227,34 @@
         <a href="#">Más imágenes</a>
     </section>
 
-    <section id="contacto" class="contact section">
+    <section id="contacto" class="contact section container section_xl">
         <article class="title_contact section_title">
             <h2>Contacto</h2>
         </article>
         <article class="contact_form box_shadow">
             <form>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="name_contact">Nombre <sup>*</sup></label>
+                    <label for="name_contact">Nombre <sup>*</sup></label>
+                    <input type="text" id="name_contact" name="name_contact" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
                     </div>
-                    <div class="col_70">
-                        <input type="text" id="name_contact" name="name_contact" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
-                    </div>
+                <div class="row_form">
+                    <label for="phone_contact">Teléfono <sup>*</sup></label>
+                    <input type="tel" id="phone_contact" name="phone_contact" placeholder="Introduzca su teléfono" title="Teléfono solo acepta números" pattern="^[0-9]{6,15}$" required />
                 </div>
                 <div class="row_form">
-                    <div class="col_30">
-                        <label for="phone_contact">Teléfono <sup>*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="tel" id="phone_contact" name="phone_contact" placeholder="Introduzca su teléfono" title="Teléfono solo acepta números" pattern="^[0-9]{6,15}$" required />
-                    </div>
+                    <label for="email_contact">Correo electrónico <sup>*</sup></label>
+                    <input type="email" id="email_contact" name="email_contact" placeholder="Intrduzca su correo electrónico" title="Debe colocar un correo electrónico válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
                 </div>
                 <div class="row_form">
-                    <div class="col col_30">
-                        <label for="email_contact">Correo electrónico <sup>*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <input type="email" id="email_contact" name="email_contact" placeholder="Intrduzca su correo electrónico" title="Debe colocar un correo electrónico válido" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
-                    </div>
+                    <label for="restaurant_contact">Restaurante <sup>*</sup></label>
+                    <select id="restaurant_contact" name="restaurant_contact" required>
+                        <option value="">Seleccione un restaurante</option>
+                        <option value="smart">Smart Restaurant</option>
+                    </select>
                 </div>
-                <div class="row_form">
-                    <div class="col_30">
-                        <label for="restaurant_contact">Restaurante <sup>*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <select id="restaurant_contact" name="restaurant_contact" required>
-                            <option value="">Seleccione un restaurante</option>
-                            <option value="smart">Smart Restaurant</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row_form">
-                    <div class="col_30">
-                        <label for="comments_contact">Comentarios <sup>*</sup></label>
-                    </div>
-                    <div class="col_70">
-                        <textarea id="comments_contact" name="comments_contact" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
-                    </div>
+                <div class="row_form text_area">
+                    <label for="comments_contact">Comentarios <sup>*</sup></label>
+                    <textarea id="comments_contact" name="comments_contact" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
                 </div>
                 <p class="text_required">* Campo requerido</p>
                 <input class="btn form_btn" type="submit" value="Enviar" />
