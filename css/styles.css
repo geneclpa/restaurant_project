@@ -430,3 +430,39 @@ img{
     margin-top: 2rem;
     padding: 10px;
 }
+
+/*  Contact cards  */
+.cards_contact{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact_card{
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_card > svg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.social_icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_icon svg{
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    fill: var(--first_color);
+}
