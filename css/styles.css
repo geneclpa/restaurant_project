@@ -110,7 +110,7 @@ img{
 }
 
 /*  Utilities  */
-.box_shadow{ box-shadow: 0.25rem 0.25rem 1 rem rgba(0, 0, 0, 0.25); }
+.box_shadow{ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25); }
 
 .container{
     margin-left: auto;
@@ -158,6 +158,53 @@ img{
 .info_food{
     margin-bottom: 1rem;
     padding: 10px;
+}
+
+/*  Estilos generales de los formularios  */
+.row_form label{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.row_form sup{ color: var(--first_color); }
+
+.row_form input,
+.row_form select,
+.row_form textarea{
+    display: block;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 1rem auto;
+    border: 0;
+    border-bottom: thin solid var(--black_alpha_color);
+}
+
+.row_form select{ background-color: var(--light_gray); }
+
+.row_form textarea{
+    border: thin solid var(--black_alpha_color);
+    background-color: var(--light_gray);
+}
+
+.row_form input[name="name_reserve"],
+.row_form input[name="name_contact"]{ text-transform: capitalize; }
+
+.form_btn{
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+.form_btn:hover{ opacity: 0.75; }
+
+.text_required{
+    color: var(--first_color);
+    font-size: 0.56rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /*  Site styles  */
@@ -348,4 +395,16 @@ img{
     font-size: 1rem;
     margin-right: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+/*  Reserve  */
+.form_reserve{ 
+    margin-top: 2rem;
+    padding: 10px;
+}
+
+/*  Contact  */
+.contact_form{
+    margin-top: 2rem;
+    padding: 10px;
 }
