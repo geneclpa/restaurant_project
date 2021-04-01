@@ -1,0 +1,6 @@
+/* Gene Luengo - España. Restaurant prototype */
+
+/* SITE OWNER */
+
+	NAME: Gene Luengo
+	EMAIL: geneluengo[at]gmail.com

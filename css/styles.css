@@ -488,8 +488,7 @@ img{
     color: var(--white_color);
 }
 
-.footer_content a{ text-decoration: none; }
-
-.footer_content a:hover{ text-decoration: underline; }
-
-.footer_content a.creator_name{ display: inline; }
+.footer_content a.creator_name{
+    display: inline;
+    text-decoration: underline;
+}
