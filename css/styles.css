@@ -403,6 +403,28 @@ img{
     padding: 10px;
 }
 
+/*  Gallery  */
+.gallery a{
+    display: block;
+    text-align: center;
+    color: var(--black_second_color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.gallery a:hover{
+    color: var(--black_first_color);
+    text-decoration: underline;
+}
+
+.img_gallery{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img_gallery img:not(.img_gallery img:last-child){ margin-bottom: 1rem; }
+
 /*  Contact  */
 .contact_form{
     margin-top: 2rem;
