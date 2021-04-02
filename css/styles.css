@@ -155,6 +155,23 @@ img{
     color: var(--black_first_color);
 }
 
+.plates:not(.plates:last-child){
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plate{
+    padding: 1rem;
+    border: thin solid var(--first_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plate:not(.plate:last-child){
+    margin-bottom: 1rem;
+}
+
 .info_food{ margin-bottom: 1rem; }
 
 /*  Estilos generales de los formularios  */
@@ -368,7 +385,7 @@ img{
 }
 
 /*  Food  */
-.food a{
+.food .link{
     display: block;
     text-align: center;
     color: var(--black_second_color);
@@ -377,9 +394,13 @@ img{
     font-weight: 700;
 }
 
-.food a:hover{
+.food .link:hover{
     color: var(--black_first_color);
     text-decoration: underline;
+}
+
+.food .btn_link{
+    text-align: center;
 }
 
 .title_food{ margin-bottom: 2rem; }
@@ -626,6 +647,11 @@ img{
 
 @media screen and (min-width: 992px){
 
+    /*  Custom properties  */
+    :root{
+        --header_height: 6rem;
+    }
+
     /*  Utilities  */
     .section_xl{ padding-top: var(--header_height); }
 
@@ -636,6 +662,7 @@ img{
     .header{
         position: sticky;
         top: 0;
+        height: var(--header_height);
     }
 
     .header_container .logo > a{ font-size: 1.3rem; }
