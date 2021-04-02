@@ -457,7 +457,11 @@ img{
     margin-bottom: 2rem;
 }
 
+.img_full_gallery{ margin-top: 2rem; }
+
 .img_gallery img:not(.img_gallery img:last-child){ margin-bottom: 1rem; }
+
+.img_full_gallery img:not(.img_full_gallery img:last-child){ margin-bottom: 1rem; }
 
 /*  Contact  */
 .contact_form{
