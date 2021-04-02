@@ -139,7 +139,7 @@
             <h2>Reservas</h2>
         </article>
         <article class="form_reserve box_shadow">
-            <form>
+            <form id="form_reserve">
                 <div class="row_form">
                     <label for="name_reserve">Nombre <sup class="form_required">*</sup></label>
                     <input type="text" id="name_reserve" name="name_reserve" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
@@ -158,7 +158,7 @@
                 </div>
                 <div class="row_form">
                     <label for="hour_reserve">Hora <sup class="form_required">*</sup></label>
-                    <select id="hour_reserve" name="hour_reserve" required>
+                    <select id="hour_reserve" name="hour_reserve" title="Debe colocar una hora válida" required>
                         <option value="">Seleccione una hora</option>
                         <option value="1">1:00</option>
                         <option value="2">2:00</option>
@@ -192,7 +192,7 @@
                 </div>
                 <div class="row_form">
                     <label for="restaurant_reserve">Restaurante <sup class="form_required">*</sup></label>
-                    <select id="restaurant_reserve" name="restaurant_reserve" required>
+                    <select id="restaurant_reserve" name="restaurant_reserve" title="Debe seleccionar un restaurante" required>
                         <option value="">Seleccione un restaurante</option>
                         <option value="smart">Smart Restaurant</option>
                     </select>
@@ -204,6 +204,9 @@
                 <p class="text_required">* Campo requerido</p>
                 <input class="btn form_btn" type="submit" value="Reservar" />
             </form>
+            <div class="loader loader_reserve none">
+                <img src="./assets/svg/loader.svg" alt="Enviando..." title="Enviando..." />
+            </div>
         </article>
         <article id="mensaje_reserva" class="modal none">
             <div class="reserve_form_response">
@@ -232,7 +235,7 @@
             <h2>Contacto</h2>
         </article>
         <article class="contact_form box_shadow">
-            <form>
+            <form id="form_contact">
                 <div class="row_form">
                     <label for="name_contact">Nombre <sup>*</sup></label>
                     <input type="text" id="name_contact" name="name_contact" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
@@ -247,7 +250,7 @@
                 </div>
                 <div class="row_form">
                     <label for="restaurant_contact">Restaurante <sup>*</sup></label>
-                    <select id="restaurant_contact" name="restaurant_contact" required>
+                    <select id="restaurant_contact" name="restaurant_contact" title="Debe seleccionar un restaurante" required>
                         <option value="">Seleccione un restaurante</option>
                         <option value="smart">Smart Restaurant</option>
                     </select>
@@ -259,6 +262,9 @@
                 <p class="text_required">* Campo requerido</p>
                 <input class="btn form_btn" type="submit" value="Enviar" />
             </form>
+            <div class="loader loader_contact none">
+                <img src="./assets/svg/loader.svg" alt="Enviando..." title="Enviando..." />
+            </div>
         </article>
         <article id="mensaje_contacto" class="modal none">
             <div class="contact_form_response">

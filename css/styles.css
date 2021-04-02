@@ -186,7 +186,7 @@ img{
 .row_form input,
 .row_form select,
 .row_form textarea{
-    display: block;
+    display: inline-block;
     font-size: 0.85rem;
     padding: 0.5rem;
     width: 100%;
@@ -205,6 +205,8 @@ img{
 .row_form input[name="name_reserve"],
 .row_form input[name="name_contact"]{ text-transform: capitalize; }
 
+.row_form span{ display: block; }
+
 .form_btn{
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -220,6 +222,52 @@ img{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+.loader{ text-align: center; }
+
+.input_error{
+    background-color: red;
+    color: var(--white_color);
+    padding: 5px;
+    font-size: .7rem;
+    margin-top: -0.9rem;
+    margin-bottom: 1rem;
+}
+
+.input_error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+/*  Animación de los mensajes de error  */
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.modal{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black_alpha_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
 
 /*  Site styles  */
 /*  Header  */
