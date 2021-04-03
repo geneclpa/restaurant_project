@@ -139,7 +139,8 @@
 
             $loader.classList.remove('none');
 
-            fetch('https://formsubmit.co/ajax/geneluengo@gmail.com', {
+            /*  Se debe sustituir el correo por la dirección desea para la petición fetch  */
+            fetch('https://formsubmit.co/ajax/info@smartrestaurant.com', {
 
                 method: 'POST',
                 body: new FormData(e.target)
