@@ -205,8 +205,6 @@ img{
 .row_form input[name="name_reserve"],
 .row_form input[name="name_contact"]{ text-transform: capitalize; }
 
-.row_form span{ display: block; }
-
 .form_btn{
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -252,7 +250,8 @@ img{
     }
 }
 
-.modal{
+.modal_reserve,
+.modal_contact{
     position: fixed;
     z-index: 999;
     top: 0;
@@ -268,6 +267,15 @@ img{
     transition: all 1s;
 }
 
+.modal_reserve#mensaje_reserva:target{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.modal_contact#mensaje_contacto:target{
+    opacity: 1;
+    pointer-events: visible;
+}
 
 /*  Site styles  */
 /*  Header  */
@@ -485,6 +493,20 @@ img{
     padding: 10px;
 }
 
+.reserve_form_response{
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white_color);
+}
+
+.reserve_form_response svg{
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--first_color);
+}
+
 /*  Gallery  */
 .gallery a{
     display: block;
@@ -546,6 +568,20 @@ img{
 }
 
 .contact_card .card_link{ color: var(--black_first_color); }
+
+.contact_form_response{
+    padding: 1rem;
+    width: 400px;
+    text-align: center;
+    background-color: var(--white_color);
+}
+
+.contact_form_response svg{
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    fill: var(--first_color);
+}
 
 .social_icon{
     display: inline-block;

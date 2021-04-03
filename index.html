@@ -142,7 +142,7 @@
             <form id="form_reserve">
                 <div class="row_form">
                     <label for="name_reserve">Nombre <sup class="form_required">*</sup></label>
-                    <input type="text" id="name_reserve" name="name_reserve" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
+                    <input type="text" id="name_reserve" name="name_reserve" placeholder="Introduzca su nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
                 </div>
                 <div class="row_form">
                     <label for="phone_reserve">Teléfono <sup class="form_required">*</sup></label>
@@ -202,13 +202,13 @@
                     <textarea id="comments_reserve" name="comments_reserve" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
                 </div>
                 <p class="text_required">* Campo requerido</p>
-                <input class="btn form_btn" type="submit" value="Reservar" />
+                <input class="btn form_btn btn_reserve" type="submit" value="Reservar" />
             </form>
             <div class="loader loader_reserve none">
                 <img src="./assets/svg/loader.svg" alt="Enviando..." title="Enviando..." />
             </div>
         </article>
-        <article id="mensaje_reserva" class="modal none">
+        <article id="mensaje_reserva" class="modal_reserve">
             <div class="reserve_form_response">
                 <h3>Gracias por su reserva.</h3>
                 <p>Le confirmareos la misma por correo electrónico lo antes posible.</p>
@@ -238,7 +238,7 @@
             <form id="form_contact">
                 <div class="row_form">
                     <label for="name_contact">Nombre <sup>*</sup></label>
-                    <input type="text" id="name_contact" name="name_contact" placeholder="Introduzca su nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
+                    <input type="text" id="name_contact" name="name_contact" placeholder="Introduzca su nombre" title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
                     </div>
                 <div class="row_form">
                     <label for="phone_contact">Teléfono <sup>*</sup></label>
@@ -260,13 +260,13 @@
                     <textarea id="comments_contact" name="comments_contact" cols="50" rows="10" placeholder="Introduzca un comentario para su reserva" title="Este campo no puede estar vacío" required></textarea>
                 </div>
                 <p class="text_required">* Campo requerido</p>
-                <input class="btn form_btn" type="submit" value="Enviar" />
+                <input class="btn form_btn btn_contact" type="submit" value="Enviar" />
             </form>
             <div class="loader loader_contact none">
                 <img src="./assets/svg/loader.svg" alt="Enviando..." title="Enviando..." />
             </div>
         </article>
-        <article id="mensaje_contacto" class="modal none">
+        <article id="mensaje_contacto" class="modal_contact">
             <div class="contact_form_response">
                 <h3>Gracias por su mensaje.</h3>
                 <p>En breve le contactaremos.</p>
