@@ -1,6 +1,14 @@
-/* Gene Luengo - España. Restaurant prototype */
+/* PROJECT */
+	Restaurant prototype
 
-/* SITE OWNER */
-
-	NAME: Gene Luengo
+/* TEAM */
+	OWNER: Gene Luengo - España.
+	SITE: https://geneclpa.github.io/portafolio_gene_luengo/
 	EMAIL: geneluengo[at]gmail.com
+
+/* RESOURCES */
+IMAGES FROM https://unsplash.com/
+SVGS FROM https://fontawesome.com/
+SVG LOGO FROM https://undraw.co/
+
+/* http://humanstxt.org */
