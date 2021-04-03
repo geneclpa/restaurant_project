@@ -277,6 +277,8 @@ img{
     pointer-events: visible;
 }
 
+.sub_section{ padding: 2rem 1rem;}
+
 /*  Site styles  */
 /*  Header  */
 .header{
@@ -747,8 +749,6 @@ img{
 @media screen and (min-width: 992px){
 
     /*  Utilities  */
-    .sub_section{ padding: 2rem 1rem;}
-
     .sub_section .section_title{ margin-top: 0; }
 
     .section_title{
